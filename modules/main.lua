@@ -9,7 +9,7 @@ end
 
 local function myrpccall_rpc(context, payload)
     nk.logger_info("my rpc call called.")
-    return nk.json_encode({ ["success"] = false})
+    return nk.json_encode({ ["success"] = true})
 end
 
 nk.register_rpc(healthcheck_rpc, "healthcheck_lua")
